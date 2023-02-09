@@ -14,13 +14,19 @@
     </section>
 
     <section class="flex flex-col gap-8">
-      <a href="https://dreampixels.fr/" target="_blank" rel="noreferrer" class="link">
-        Dream Pixels
-      </a>
-      <a href="https://spoliabotanique.com/" target="_blank" rel="noreferrer" class="link">
-        Spolia botanique
-      </a>
-      <a href="/cv" class="link">CV</a>
+      <div>
+        <a href="https://dreampixels.fr/" target="_blank" rel="noreferrer" class="link">
+          Dream Pixels
+        </a>
+      </div>
+      <div>
+        <a href="https://spoliabotanique.com/" target="_blank" rel="noreferrer" class="link">
+          Spolia botanique
+        </a>
+      </div>
+      <div>
+        <a href="/cv" class="link">CV</a>
+      </div>
     </section>
   </div>
 
