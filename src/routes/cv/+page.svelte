@@ -8,6 +8,7 @@
   import CvTypeTwo from './CVTypeTwo.svelte';
   import CvTypeThree from './CVTypeThree.svelte';
   import LanguagesSection from './LanguagesSection.svelte';
+  import DownloadSection from './DownloadSection.svelte';
 </script>
 
 <GoHome />
@@ -17,4 +18,5 @@
   <CvTypeOne type="Education" items={EDUCATIONS} />
   <CvTypeThree type="Publications" items={PUBLICATIONS} />
   <LanguagesSection />
+  <DownloadSection />
 </div>
