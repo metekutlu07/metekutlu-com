@@ -11,10 +11,22 @@
     <div class="col-span-8">
       <div class="flex flex-col gap-2">
         <div>
-          <a href="/cv" class="text-lg hover:underline sm:text-xl">English</a>
+          <a
+            href="/files/cv-mete-kutlu-en.pdf"
+            target="_blank"
+            class="text-lg hover:underline sm:text-xl"
+          >
+            English
+          </a>
         </div>
         <div>
-          <a href="/cv" class="text-lg hover:underline sm:text-xl">French</a>
+          <a
+            href="/files/cv-mete-kutlu-fr.pdf"
+            target="_blank"
+            class="text-lg hover:underline sm:text-xl"
+          >
+            French
+          </a>
         </div>
       </div>
     </div>
