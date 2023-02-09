@@ -6,6 +6,6 @@
   <title>Mete Kutlu</title>
 </svelte:head>
 
-<div class="h-screen w-screen text-white">
+<div class="h-screen">
   <slot />
 </div>
