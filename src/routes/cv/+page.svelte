@@ -12,7 +12,7 @@
 </script>
 
 <GoHome />
-<div class="px-4 pt-12 pb-4 md:px-6 md:pb-6 lg:mx-auto lg:max-w-5xl">
+<div class="mx-auto max-w-5xl px-4 pt-12 pb-4 md:px-6 md:pb-6">
   <CvTypeOne type="Residencies" items={RESIDENCIES} />
   <CvTypeTwo type="Conferences" items={CONFERENCES} />
   <CvTypeOne type="Education" items={EDUCATIONS} />
