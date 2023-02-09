@@ -12,7 +12,7 @@
     </div>
   </div>
 
-  <div class="grid lg:grid-cols-12 lg:gap-x-8">
+  <div class="mb-4 grid lg:grid-cols-12 lg:gap-x-8">
     <div class="col-span-4 text-right" />
     <div class="col-span-8">
       <div class="grid grid-cols-2 md:w-2/3">
