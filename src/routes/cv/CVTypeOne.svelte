@@ -1,7 +1,7 @@
 <script lang="ts">
   import type { CVTypeOne } from '$lib/types';
 
-  export let type: 'Residencies' | 'Education';
+  export let type: 'Awards' | 'Education' | 'Teaching' | 'Residencies';
   export let items: CVTypeOne[] = [];
 </script>
 
