@@ -7,22 +7,41 @@ export const EDUCATIONS: CVTypeOne[] = [
     location: 'Paris-Shanghai',
     date: '2018-2023',
     description:
-      'Residency for a field study on Byzantine miniatures preserved at the Biblioteca Marciana.'
+      'Currently preparing a thesis entitled Two Composite Visions of Space: 16th-Century Ottoman Miniature and Contemporary Augmented Reality'
   },
   {
     title: 'Post-master in architectural research (DPEA)',
     subtitle: 'Paris-La Villette Architecture School',
     location: 'Paris, France',
     date: '2017-2018',
-    description:
-      'Residency for a field study on Byzantine miniatures preserved at the Biblioteca Marciana.'
+    description: ''
   },
   {
-    title: 'Architectural License (HMONP)',
-    subtitle: 'Paris-La Villette Architecture School',
+    title: 'Architect’s License (HMONP)',
+    subtitle: 'Paris-Malaquais Architecture School',
     location: 'Paris, France',
     date: '2016-2017',
-    description:
-      'Residency for a field study on Byzantine miniatures preserved at the Biblioteca Marciana.'
+    description: ''
+  },
+  {
+    title: 'Master in Architecture ',
+    subtitle: 'Paris-Malaquais Architecture School',
+    location: 'Paris, France',
+    date: '2014-2016',
+    description: ''
+  },
+  {
+    title: 'Bachelor of Architecture',
+    subtitle: 'Paris-Malaquais Architecture School',
+    location: 'Paris, France',
+    date: '2009-2014',
+    description: ''
+  },
+  {
+    title: 'Scientific High School Diploma',
+    subtitle: 'American Robert College',
+    location: 'Istanbul, Turkey',
+    date: '2004-2009',
+    description: ''
   }
 ];

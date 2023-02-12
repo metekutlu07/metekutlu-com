@@ -17,10 +17,10 @@ export const LANGUAGES = [
   },
   {
     language: 'Turkish',
-    proficiency: 'Mother Tongue'
+    proficiency: 'Mother tongue'
   },
   {
     language: 'Korean',
-    proficiency: 'Begineer'
+    proficiency: 'Beginner'
   }
 ];

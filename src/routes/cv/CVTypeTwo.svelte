@@ -1,7 +1,7 @@
 <script lang="ts">
   import type { CVTypeTwo } from '$lib/types';
 
-  export let type: 'Conferences';
+  export let type: 'Conferences' | 'Internships';
   export let items: CVTypeTwo[] = [];
 </script>
 
