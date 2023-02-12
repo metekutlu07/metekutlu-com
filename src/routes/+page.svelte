@@ -57,6 +57,6 @@
 
 <style lang="postcss">
   .link {
-    @apply inline-block border border-white px-6 pt-1 pb-3 text-3xl hover:bg-white hover:bg-opacity-25 sm:text-4xl;
+    @apply inline-block border border-white px-6 pt-1.5 pb-2 text-3xl hover:bg-white hover:bg-opacity-25 sm:text-4xl;
   }
 </style>
