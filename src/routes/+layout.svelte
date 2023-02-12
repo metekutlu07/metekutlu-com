@@ -4,6 +4,8 @@
   import cvpage_video from '$lib/assets/videos/dome3.mp4';
   import type { LayoutData } from './$types';
   import { fade } from 'svelte/transition';
+  import { onMount } from 'svelte';
+  import { debounce } from '$lib/utils';
 
   export let data: LayoutData;
 
@@ -11,6 +13,23 @@
     data.currentPath === '/'
       ? { src: homepage_video, class: 'opacity-50' }
       : { src: cvpage_video, class: 'opacity-25' };
+
+  const setViewHeight = () => {
+    // fix full screen issue in mobile devices with 100vh
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  };
+
+  const debouncedSetViewHeight = debounce(setViewHeight, 50);
+
+  onMount(() => {
+    debouncedSetViewHeight();
+    window.addEventListener('resize', debouncedSetViewHeight);
+
+    return () => {
+      window.removeEventListener('resize', debouncedSetViewHeight);
+    };
+  });
 </script>
 
 <svelte:head>
@@ -18,7 +37,7 @@
 </svelte:head>
 
 {#key data.currentPath}
-  <div class="h-screen" in:fade={{ duration: 200 }} out:fade={{ duration: 100 }}>
+  <div class="full-height" in:fade={{ duration: 200 }} out:fade={{ duration: 100 }}>
     <video
       autoplay
       loop
@@ -29,8 +48,15 @@
     >
       <track kind="captions" />
     </video>
-    <div class="relative z-10 h-screen">
+    <div class="full-height relative z-10">
       <slot />
     </div>
   </div>
 {/key}
+
+<style lang="postcss">
+  .full-height {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+  }
+</style>
